@@ -1,17 +1,24 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
+import Image from 'next/image'
 import classes from './Hero.module.css'
 
 const Hero = React.forwardRef(function Hero(props, ref) {
   const { className, children, api, ...other } = props
 
-  console.log(api)
   return (
     <div className={classes.root} ref={ref} {...other}>
       {api.map((data, idx) => (
         <div key={idx}>
-          <h5>{data.subTitle}</h5>
-          <img src={data.images.desktop} alt="space" />
+          <div className={classes.text}>
+            <h5 className={classes.subTitle}>{data.subTitle}</h5>
+            <h1 className={classes.title}>{data.title}</h1>
+            <p className={classes.description}>{data.description}</p>
+          </div>
+
+          <div className={classes.imgContainer}>
+            <Image src={data.images.desktop} layout="fill" />
+          </div>
         </div>
       ))}
     </div>

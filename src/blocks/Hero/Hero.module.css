@@ -1,3 +1,27 @@
 .root {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  width: 50%;
+}
+
+.subTitle {
+  margin: 0;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.description {
+  width: 51%;
+}
+
+.imgContainer span {
+  z-index: -1;
 }

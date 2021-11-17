@@ -1,7 +1,8 @@
 import * as React from 'react'
 import Head from 'next/head'
-import { home } from '../api/mock'
+import { home, nav } from '../api/mock'
 import Hero from '../blocks/Hero/Hero'
+import Navbar from '../blocks/Navbar/Navbar'
 import Crew from '../blocks/Crew/Crew'
 import Destination from '../blocks/Destination/Destination'
 import Technology from '../blocks/Technology/Technology'
@@ -32,6 +33,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Navbar nav={nav} />
         <Hero api={home} />
 
         {/* <Crew />
