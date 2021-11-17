@@ -1,0 +1,57 @@
+:root {
+  /* Colors */
+  --dark-color: #0b0d17;
+  --lilac-color: #d0d6f9;
+  --white-color: #fff;
+
+  /* Fonts */
+  --barlow-font: 'Barlow Condensed', sans-serif;
+  --cormorant-font: 'Cormorant Garamond', serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--cormorant-font);
+  margin: 0;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-family: var(--barlow-font);
+}
