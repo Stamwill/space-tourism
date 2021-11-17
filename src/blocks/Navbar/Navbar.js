@@ -5,7 +5,7 @@ import classes from './Navbar.module.css'
 
 const Navbar = React.forwardRef(function Navbar(props, ref) {
   const { className, children, nav, ...other } = props
-  console.log(nav)
+
   return (
     <div className={classes.root} ref={ref} {...other}>
       <div>
@@ -33,7 +33,6 @@ const Navbar = React.forwardRef(function Navbar(props, ref) {
             </li>
           </ul>
         ))}
-        {/* <div className={classes.test} /> */}
       </nav>
     </div>
   )

@@ -8,40 +8,22 @@
 }
 
 .nav {
-  background-color: rgba(225, 225, 255, 0.9);
-  filter: blur(1px);
   color: var(--white-color);
-}
-
-.test {
-  position: relative;
-  background-color: rgba(225, 225, 255, 0.9);
-  filter: blur(20px);
-  /* filter: blur(5px); */
-  right: 0;
-  top: -40px;
-  width: 65%;
-  height: 100px;
-  /* z-index: -1; */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navList {
+  color: var(--white-color);
   display: flex;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 20px;
   filter: none;
 }
 
 .link {
   list-style-type: none;
-  margin-left: 100px;
+  margin-left: 20px;
   font-size: 20px;
-  filter: blur(0);
-  opacity: 1;
-}
-
-.link:after {
-  filter: none;
 }
 
 .num {
