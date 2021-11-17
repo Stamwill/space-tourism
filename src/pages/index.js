@@ -1,10 +1,12 @@
 import * as React from 'react'
 import Head from 'next/head'
+import { home } from '../api/mock'
 import Hero from '../blocks/Hero/Hero'
 import Crew from '../blocks/Crew/Crew'
 import Destination from '../blocks/Destination/Destination'
 import Technology from '../blocks/Technology/Technology'
 import styles from '../styles/Home.module.css'
+// import api from '../../public/data.json'
 
 export default function Home() {
   return (
@@ -30,7 +32,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Hero />
+        <Hero api={home} />
 
         {/* <Crew />
         <Destination />
