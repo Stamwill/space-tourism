@@ -1,0 +1,39 @@
+.root {
+  position: fixed;
+  height: 0%;
+  width: 50%;
+  top: 0;
+  right: 0%;
+  background-color: var(--dark-color);
+  overflow-y: hidden;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.menuIsOpen {
+  height: 100%;
+  opacity: 0.97;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 2;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.link {
+  color: var(--white-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.num {
+  margin-right: 10px;
+}
