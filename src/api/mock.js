@@ -117,8 +117,8 @@ export const home = [
     title: 'space',
     images: {
       desktop: '/images/background-home-desktop.jpg',
-      tablet: './assets/home/background-home-tablet.jpg',
-      mobile: './assets/home/background-home-mobile.jpg',
+      tablet: '/images/background-home-tablet.jpg',
+      mobile: '/images/background-home-mobile.jpg',
     },
     description:
       "Let's face it; if you want to go to space, you might as well genuienly go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!",
@@ -127,21 +127,23 @@ export const home = [
 
 export const nav = [
   {
-    home: {
-      num: '00',
-      text: 'home',
-    },
-    destination: {
-      num: '01',
-      text: 'destination',
-    },
-    crew: {
-      num: '02',
-      text: 'crew',
-    },
-    technology: {
-      num: '03',
-      text: 'technology',
-    },
+    num: '00',
+    label: 'home',
+    href: '/',
+  },
+  {
+    num: '01',
+    label: 'destination',
+    href: '/',
+  },
+  {
+    num: '02',
+    label: 'crew',
+    href: '/',
+  },
+  {
+    num: '03',
+    label: 'technology',
+    href: '/',
   },
 ]
