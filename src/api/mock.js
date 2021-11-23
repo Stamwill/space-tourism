@@ -1,9 +1,19 @@
+export const destinationBg = [
+  {
+    background: {
+      desktop: '/images/destination/background-destination-desktop.jpg',
+      tablet: '/images/destination/background-destination-tablet.jpg',
+      mobile: '/images/destination/background-destination-mobile.jpg',
+    },
+  },
+]
+
 export const destinations = [
   {
     name: 'Moon',
     images: {
-      png: './assets/destination/image-moon.png',
-      webp: './assets/destination/image-moon.webp',
+      img: '/images/destination/image-moon.png',
+      webp: '/images/destination/image-moon.webp',
     },
     description:
       'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.',
@@ -13,8 +23,8 @@ export const destinations = [
   {
     name: 'Mars',
     images: {
-      png: './assets/destination/image-mars.png',
-      webp: './assets/destination/image-mars.webp',
+      img: '/images/destination/image-mars.png',
+      webp: '/images/destination/image-mars.webp',
     },
     description:
       'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!',
@@ -24,8 +34,8 @@ export const destinations = [
   {
     name: 'Europa',
     images: {
-      png: './assets/destination/image-europa.png',
-      webp: './assets/destination/image-europa.webp',
+      img: '/images/destination/image-europa.png',
+      webp: '/images/destination/image-europa.webp',
     },
     description:
       'The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.',
@@ -35,8 +45,8 @@ export const destinations = [
   {
     name: 'Titan',
     images: {
-      png: './assets/destination/image-titan.png',
-      webp: './assets/destination/image-titan.webp',
+      img: '/images/destination/image-titan.png',
+      webp: '/images/destination/image-titan.webp',
     },
     description:
       'The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.',
@@ -115,13 +125,17 @@ export const home = [
   {
     subTitle: 'So you want to travel to',
     title: 'space',
-    images: {
+    description:
+      "Let's face it; if you want to go to space, you might as well genuienly go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!",
+  },
+]
+export const homeBg = [
+  {
+    background: {
       desktop: '/images/background-home-desktop.jpg',
       tablet: '/images/background-home-tablet.jpg',
       mobile: '/images/background-home-mobile.jpg',
     },
-    description:
-      "Let's face it; if you want to go to space, you might as well genuienly go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!",
   },
 ]
 
@@ -134,7 +148,7 @@ export const nav = [
   {
     num: '01',
     label: 'destination',
-    href: '/',
+    href: '/destination',
   },
   {
     num: '02',
