@@ -4,8 +4,7 @@ import classes from './Picture.module.css'
 
 const Picture = React.forwardRef(function Picture(props, ref) {
   const { className, children, api, ...other } = props
-
-  const { mobile, tablet, desktop } = api[0].images
+  const { mobile, tablet, desktop } = api[0].background
 
   return (
     <div className={classes.root} ref={ref} {...other}>
