@@ -1,0 +1,10 @@
+.root {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.num {
+  margin-right: 10px;
+}
