@@ -34,8 +34,13 @@ h4 {
   margin: 0;
 }
 
+h5,
+a {
+  font-family: var(--barlow-font);
+}
+
 h1 {
-  font-size: 150px;
+  font-size: 90px;
 }
 
 h2 {
@@ -51,7 +56,31 @@ h4 {
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 15px;
   letter-spacing: 4.75px;
   font-family: var(--barlow-font);
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 150px;
+  }
+
+  h2 {
+    font-size: 100px;
+  }
+
+  h3 {
+    font-size: 56px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-family: var(--barlow-font);
+  }
 }
