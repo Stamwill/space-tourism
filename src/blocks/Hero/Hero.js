@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import Image from 'next/image'
+import Picture from '../../components/Picture/Picture'
+import ExploreLink from '../../components/ExploreLink'
 import classes from './Hero.module.css'
 
 const Hero = React.forwardRef(function Hero(props, ref) {
@@ -8,19 +9,17 @@ const Hero = React.forwardRef(function Hero(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
-      {api.map((data, idx) => (
-        <div key={idx}>
-          <div className={classes.text}>
-            <h5 className={classes.subTitle}>{data.subTitle}</h5>
-            <h1 className={classes.title}>{data.title}</h1>
-            <p className={classes.description}>{data.description}</p>
-          </div>
+      <Picture api={api} />
 
-          <div className={classes.imgContainer}>
-            <Image src={data.images.desktop} layout="fill" />
-          </div>
+      {api.map((data, idx) => (
+        <div className={classes.text} key={idx}>
+          <h5 className={classes.subTitle}>{data.subTitle}</h5>
+          <h1 className={classes.title}>{data.title}</h1>
+          <p className={classes.description}>{data.description}</p>
         </div>
       ))}
+
+      <ExploreLink />
     </div>
   )
 })
