@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Head from 'next/head'
-import { home, nav } from '../api/mock'
+import { home } from '../api/mock'
 import Hero from '../blocks/Hero/Hero'
 import Navbar from '../blocks/Navbar/Navbar'
 import Crew from '../blocks/Crew/Crew'
@@ -40,10 +40,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <AppAppBar>
+        {/* <AppAppBar>
           <Navbar nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
           <AppDrawer nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
-        </AppAppBar>
+        </AppAppBar> */}
         <Hero api={home} />
 
         {/* <Crew />
