@@ -1,0 +1,36 @@
+.root {
+  margin-right: 5%;
+  z-index: 11;
+}
+
+.container {
+  cursor: pointer;
+}
+
+.barOne,
+.barTwo,
+.barThree {
+  width: 35px;
+  height: 5px;
+  background-color: var(--white-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menuIsOpen .barOne {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.menuIsOpen .barTwo {
+  opacity: 0;
+}
+
+.menuIsOpen .barThree {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (min-width: 768px) {
+  .root {
+    display: none;
+  }
+}
