@@ -31,8 +31,8 @@ const AppDrawer = React.forwardRef(function AppDrawer(props, ref) {
     >
       <div className={classes.navBar}>
         {nav.map((link, id) => (
-          <Link href="passHref" key={id}>
-            <a className={classes.link} key={id} href={link.href} onClick={toggleMenu}>
+          <Link href={link.href} passHref key={id}>
+            <a className={classes.link} key={id} onClick={toggleMenu}>
               <span className={classes.num}>{link.num}</span>
               {link.label}
             </a>

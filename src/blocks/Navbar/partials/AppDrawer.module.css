@@ -1,7 +1,7 @@
 .root {
   position: fixed;
   height: 0%;
-  width: 50%;
+  width: 70vw;
   top: 0;
   right: 0%;
   background-color: var(--dark-color);
@@ -23,8 +23,7 @@
   text-align: left;
   z-index: 2;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 35%;
 }
 
 .link {
