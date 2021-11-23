@@ -19,8 +19,8 @@ const Navbar = React.forwardRef(function Navbar(props, ref) {
       <Hamburger open={open} toggleMenu={toggleMenu} />
       <nav className={classes.nav}>
         {nav.map((link, idx) => (
-          <Link className={classes.navList} href="passHref" key={idx}>
-            <a className={classes.link} href={link.href}>
+          <Link className={classes.navList} href={link.href} passHref key={idx}>
+            <a className={classes.link}>
               <span className={classes.num}>{link.num}</span>
               {link.label}
             </a>
