@@ -6,10 +6,17 @@ import Navbar from '../blocks/Navbar/Navbar'
 import Crew from '../blocks/Crew/Crew'
 import Destination from '../blocks/Destination/Destination'
 import Technology from '../blocks/Technology/Technology'
+import AppAppBar from '../containers/AppAppBar'
+import AppDrawer from '../blocks/Navbar/partials/AppDrawer'
 import styles from '../styles/Home.module.css'
-// import api from '../../public/data.json'
 
 export default function Home() {
+  const [menuIsOpen, setMenuOpen] = React.useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen((prevState) => !prevState)
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -33,7 +40,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar nav={nav} />
+        <AppAppBar>
+          <Navbar nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
+          <AppDrawer nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
+        </AppAppBar>
         <Hero api={home} />
 
         {/* <Crew />
