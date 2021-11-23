@@ -6,7 +6,11 @@ const Crew = React.forwardRef(function Crew(props, ref) {
   const { className, children, ...other } = props
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <h1>CREW</h1>
+      {/* title, name, description, img */}
+      <img src="" alt="crew member" />
+      <h3 className={classes.title}>Title</h3>
+      <h2 className={classes.name}>Name</h2>
+      <p className={classes.description}>Description</p>
     </div>
   )
 })
