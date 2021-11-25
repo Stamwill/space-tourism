@@ -33,7 +33,7 @@
   background-color: inherit;
   text-decoration: none;
   color: var(--lilac-color);
-  /* transition: all 0.5s; */
+  transition: all 0.5s;
 }
 
 .button:hover {
@@ -49,6 +49,8 @@
 
 .description {
   font-size: 12px;
+  padding-bottom: 50px;
+  height: 90px;
 }
 
 .line {
@@ -76,8 +78,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .textContainer {
+    width: 50%;
+  }
   .test {
+    width: 50%;
+    margin: 20px auto;
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -93,22 +101,8 @@
   }
 
   .img {
+    margin-left: 15%;
     height: 400px;
     width: 400px;
-  }
-
-  .container {
-    align-items: center;
-  }
-
-  .textContainer {
-    width: 50%;
-    margin: 0;
-  }
-
-  .test {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
   }
 }
