@@ -33,3 +33,37 @@
   text-decoration: none;
   color: var(--lilac-color);
 }
+
+.textContainer {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.line {
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: white;
+  opacity: 0.2;
+}
+
+.test {
+  margin-top: 20px;
+}
+
+.distanceHeader {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.distance {
+  margin-top: 0;
+  font-size: 30px;
+  font-family: var(--barlow-font);
+}
