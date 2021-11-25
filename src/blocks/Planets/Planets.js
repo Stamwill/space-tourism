@@ -44,12 +44,19 @@ const Planets = React.forwardRef(function Planets(props, ref) {
           <div className={classes.line} />
         </div>
 
+        {/* Create block for moon and description? */}
+
         <div className={classes.test}>
-          <h5 className={classes.distanceHeader}>AVG. DISTANCE</h5>
-          <p className={classes.distance}>{currentDistance}</p>
-          <h5 className={classes.distanceHeader}>EST. TRAVEL TIME</h5>
-          <p className={classes.distance}>{currentTravel}</p>
+          <div>
+            <h5 className={classes.distanceHeader}>AVG. DISTANCE</h5>
+            <p className={classes.distance}>{currentDistance}</p>
+          </div>
+          <div>
+            <h5 className={classes.distanceHeader}>EST. TRAVEL TIME</h5>
+            <p className={classes.distance}>{currentTravel}</p>
+          </div>
         </div>
+        {/* Create block for distance ? */}
       </div>
     </div>
   )
