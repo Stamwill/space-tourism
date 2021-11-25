@@ -54,6 +54,17 @@ export const destinations = [
     travel: '7 years',
   },
 ]
+
+export const crewBg = [
+  {
+    background: {
+      desktop: '/images/crew/background-crew-desktop.jpg',
+      tablet: '/images/crew/background-crew-tablet.jpg',
+      mobile: '/images/crew/background-crew-mobile.jpg',
+    },
+  },
+]
+
 export const crew = [
   {
     name: 'Douglas Hurley',
@@ -153,7 +164,7 @@ export const nav = [
   {
     num: '02',
     label: 'crew',
-    href: '/',
+    href: '/crew',
   },
   {
     num: '03',
