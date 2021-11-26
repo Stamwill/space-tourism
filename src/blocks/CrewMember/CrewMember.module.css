@@ -10,7 +10,7 @@
 .crew {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex: 0 0 100%;
 }
