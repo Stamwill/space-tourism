@@ -5,15 +5,27 @@
   align-items: center;
 }
 
+.crew {
+  /* margin-right: 100%; */
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  flex: 0 0 100%;
+}
+
 .crewImg {
   height: 250px;
   width: 200px;
+  margin: 0 auto;
 }
 
 .line {
   display: block;
   position: relative;
+  width: 90%;
+  margin: 0 auto;
   height: 1px;
-  background-color: white;
+  background-color: var(--white-color);
   opacity: 0.2;
 }
