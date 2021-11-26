@@ -2,21 +2,22 @@
   color: var(--white-color);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .crew {
-  /* margin-right: 100%; */
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  justify-content: center;
+  align-items: center;
   flex: 0 0 100%;
 }
 
 .crewImg {
-  height: 250px;
-  width: 200px;
+  height: 150px;
+  width: 125px;
   margin: 0 auto;
 }
 
@@ -28,4 +29,9 @@
   height: 1px;
   background-color: var(--white-color);
   opacity: 0.2;
+}
+
+.bio {
+  width: 50%;
+  margin-bottom: 20px;
 }
