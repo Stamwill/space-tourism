@@ -10,7 +10,6 @@
 .crew {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   flex: 0 0 100%;
 }
@@ -24,7 +23,7 @@
 .line {
   display: block;
   position: relative;
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   height: 1px;
   background-color: var(--white-color);
