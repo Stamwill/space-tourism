@@ -28,10 +28,10 @@ const EmblaCarousel = React.forwardRef(function EmblaCarousel(props, ref) {
           <div className={classes.slide}>Slide 3</div> */}
         </div>
         <button className={classes.prev} type="button" onClick={scrollPrev}>
-          prev
+          {'<'}
         </button>
         <button className={classes.next} type="button" onClick={scrollNext}>
-          next
+          {'>'}
         </button>
       </div>
     </div>

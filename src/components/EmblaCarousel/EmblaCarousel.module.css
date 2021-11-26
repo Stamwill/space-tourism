@@ -16,19 +16,21 @@
 
 .prev,
 .next {
-  height: 100px;
-  width: 100px;
-  background-color: red;
+  height: 20px;
+  width: 20px;
+  border: none;
+  font-size: 30px;
+  color: var(--white-color);
+  background-color: inherit;
   border-radius: 50px;
   position: absolute;
+  top: 40%;
 }
 
 .prev {
-  top: 0;
   left: 0;
 }
 
 .next {
-  top: 0;
-  left: 200px;
+  left: 90%;
 }
