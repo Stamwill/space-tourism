@@ -30,7 +30,35 @@
   opacity: 0.2;
 }
 
+.textContainer {
+  text-align: center;
+}
+
+.role {
+}
+
+.name {
+  margin-bottom: 25px;
+}
+
 .bio {
   width: 50%;
+  margin: 0px auto;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .imgContainer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .crewImg {
+    height: 550px;
+    width: 450px;
+  }
 }

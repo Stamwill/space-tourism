@@ -11,11 +11,16 @@ const CrewMember = React.forwardRef(function CrewMember(props, ref) {
       <EmblaCarousel>
         {api.map((data, idx) => (
           <div className={classes.crew} key={idx}>
-            <img className={classes.crewImg} src={data.images.img} alt="test" />
+            <div className={classes.imgContainer}>
+              <img className={classes.crewImg} src={data.images.img} alt="test" />
+            </div>
             <div className={classes.line} />
-            <h5 className={classes.role}>{data.role}</h5>
-            <h4 className={classes.name}>{data.name}</h4>
-            <p className={classes.bio}>{data.bio}</p>
+
+            <div className={classes.textContainer}>
+              <h5 className={classes.role}>{data.role}</h5>
+              <h4 className={classes.name}>{data.name}</h4>
+              <p className={classes.bio}>{data.bio}</p>
+            </div>
           </div>
         ))}
       </EmblaCarousel>
