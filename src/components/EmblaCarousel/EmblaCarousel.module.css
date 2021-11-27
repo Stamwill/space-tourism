@@ -34,3 +34,10 @@
 .next {
   left: 90%;
 }
+
+@media screen and (min-width: 768px) {
+  .root,
+  .container {
+    height: 86vh;
+  }
+}
