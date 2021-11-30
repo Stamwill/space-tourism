@@ -23,6 +23,7 @@
 .line {
   display: block;
   position: relative;
+  top: -4px;
   width: 50%;
   margin: 0 auto;
   height: 1px;
@@ -32,9 +33,12 @@
 
 .textContainer {
   text-align: center;
+  margin-top: 70px;
 }
 
 .role {
+  margin: 0 0 10px 0;
+  color: gray;
 }
 
 .name {
@@ -48,9 +52,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .imgContainer {
-    position: absolute;
-    bottom: 0;
+  .textContainer {
+    margin-top: 40px;
   }
 
   .line {
@@ -58,7 +61,31 @@
   }
 
   .crewImg {
-    height: 550px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crew {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .textContainer {
+    width: 35%;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .bio {
+    width: 100%;
+    margin: 0;
+  }
+
+  .imgContainer {
+    position: relative;
+    left: 60%;
   }
 }

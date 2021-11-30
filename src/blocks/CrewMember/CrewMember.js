@@ -14,6 +14,7 @@ const CrewMember = React.forwardRef(function CrewMember(props, ref) {
             <div className={classes.imgContainer}>
               <img className={classes.crewImg} src={data.images.img} alt="test" />
             </div>
+
             <div className={classes.line} />
 
             <div className={classes.textContainer}>
