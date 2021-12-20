@@ -116,7 +116,7 @@ export const technologyBg = [
 
 export const technology = [
   {
-    name: 'Launch vehicle',
+    title: 'Launch vehicle',
     images: {
       img: '/images/technology/image-launch-vehicle-portrait.jpg',
       landscape: '/images/technology/image-launch-vehicle-landscape.jpg',
@@ -126,7 +126,7 @@ export const technology = [
     num: 1,
   },
   {
-    name: 'Spaceport',
+    title: 'Spaceport',
     images: {
       img: '/images/technology/image-spaceport-portrait.jpg',
       landscape: '/images/technology/image-spaceport-landscape.jpg',
@@ -136,7 +136,7 @@ export const technology = [
     num: 2,
   },
   {
-    name: 'Space capsule',
+    title: 'Space capsule',
     images: {
       img: '/images/technology/image-space-capsule-portrait.jpg',
       landscape: '/images/technology/image-space-capsule-landscape.jpg',
