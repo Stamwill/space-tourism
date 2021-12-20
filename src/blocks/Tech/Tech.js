@@ -9,7 +9,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
   const numTest = [1, 2, 3]
 
   const [currentImg, setCurrentImg] = React.useState(api[0].images.img)
-  const [currentTitle, setCurrentTitle] = React.useState('moon')
+  const [currentTitle, setCurrentTitle] = React.useState(api[0].title)
   const [currentDescription, setCurrentDescription] = React.useState(api[0].description)
 
   return (
@@ -29,7 +29,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
               onClick={() =>
                 setCurrentImg(
                   data.images.img,
-                  setCurrentTitle(data.name, setCurrentDescription(data.description)),
+                  setCurrentTitle(data.title, setCurrentDescription(data.description)),
                 )
               }
             >
