@@ -7,6 +7,10 @@
   transition: all 0.7s;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .isSelected {
   background-color: white;
 }
