@@ -8,6 +8,7 @@
 .buttons {
   display: flex;
   border: none;
+  transition: all 1s;
 }
 
 .btn {
@@ -18,6 +19,13 @@
   border: 1px solid white;
   border-radius: 50%;
   background-color: inherit;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  cursor: pointer;
 }
 
 .imgContainer {

@@ -6,6 +6,8 @@ import classes from './Tech.module.css'
 const Technology = React.forwardRef(function Technology(props, ref) {
   const { className, children, api, ...other } = props
 
+  const numTest = [1, 2, 3]
+
   const [currentImg, setCurrentImg] = React.useState(api[0].images.img)
   const [currentTitle, setCurrentTitle] = React.useState('moon')
   const [currentDescription, setCurrentDescription] = React.useState(api[0].description)
@@ -13,9 +15,11 @@ const Technology = React.forwardRef(function Technology(props, ref) {
   return (
     <div className={classes.root} ref={ref} {...other}>
       <PageTracker pageNumber={`03`} pageText={`SPACE LAUNCH 101`} />
+
       <div className={classes.imgContainer}>
         <img className={classes.img} src={currentImg} alt="spaceImg" />
       </div>
+
       <div className={classes.buttons}>
         {api.map((data, idx) => (
           <div key={idx}>
@@ -29,7 +33,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
                 )
               }
             >
-              1
+              {data.num}
             </button>
           </div>
         ))}
