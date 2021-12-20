@@ -5,13 +5,11 @@ import { nav } from '../api/mock'
 import AppAppBar from '../containers/AppAppBar'
 import Navbar from '../blocks/Navbar'
 import AppDrawer from '../blocks/Navbar/partials/AppDrawer'
-import PageTracker from '../blocks/PageTracker'
 import { GlobalProvider } from '../api/GlobalContext'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   const [menuIsOpen, setMenuOpen] = React.useState(false)
-  const [pageNumber, setPageNumber] = React.useState('01')
 
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState)
@@ -43,7 +41,6 @@ function MyApp({ Component, pageProps }) {
         <Navbar nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
         <AppDrawer nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
       </AppAppBar>
-      <PageTracker pageNumber={pageNumber} />
       <Component {...pageProps} />
     </GlobalProvider>
   )
