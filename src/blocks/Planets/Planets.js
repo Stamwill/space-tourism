@@ -1,5 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
+import PageTracker from '../PageTracker/PageTracker'
 import classes from './Planets.module.css'
 
 const Planets = React.forwardRef(function Planets(props, ref) {
@@ -12,6 +13,7 @@ const Planets = React.forwardRef(function Planets(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
+      <PageTracker pageNumber={`01`} pageText={`PICK YOUR DESTINATION`} />
       <img className={classes.img} src={currentImg} alt="test" />
       <div className={classes.container}>
         <div className={classes.buttons}>
