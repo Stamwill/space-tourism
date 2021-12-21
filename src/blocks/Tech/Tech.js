@@ -6,8 +6,6 @@ import classes from './Tech.module.css'
 const Technology = React.forwardRef(function Technology(props, ref) {
   const { className, children, api, ...other } = props
 
-  const numTest = [1, 2, 3]
-
   const [currentImg, setCurrentImg] = React.useState(api[0].images.img)
   const [currentTitle, setCurrentTitle] = React.useState(api[0].title)
   const [currentDescription, setCurrentDescription] = React.useState(api[0].description)
@@ -40,6 +38,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
       </div>
 
       <div className={classes.container}>
+        <h5 className={classes.subTitle}>The Terminology...</h5>
         <h4 className={classes.title}>{currentTitle}</h4>
         <p className={classes.description}>{currentDescription}</p>
       </div>
