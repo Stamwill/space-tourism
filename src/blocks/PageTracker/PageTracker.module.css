@@ -12,6 +12,7 @@
 @media screen and (min-width: 768px) {
   .root {
     justify-content: flex-start;
+    align-self: flex-start;
     margin-left: 45px;
   }
 }
