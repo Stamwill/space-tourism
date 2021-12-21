@@ -1,8 +1,8 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import EmblaCarousel from '../../components/EmblaCarousel'
-import classes from './CrewMember.module.css'
 import PageTracker from '../PageTracker/PageTracker'
+import classes from './CrewMember.module.css'
 
 const CrewMember = React.forwardRef(function CrewMember(props, ref) {
   const { className, children, api, ...other } = props
