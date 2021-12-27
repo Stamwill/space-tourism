@@ -186,3 +186,18 @@ export const nav = [
     href: '/technology',
   },
 ]
+
+export const tracker = [
+  {
+    num: '01',
+    label: 'PICK YOUR DESTINATION',
+  },
+  {
+    num: '02',
+    label: 'MEET YOUR CREW',
+  },
+  {
+    num: '03',
+    label: 'SPACE LAUNCH 101',
+  },
+]
