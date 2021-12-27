@@ -12,35 +12,37 @@ const Technology = React.forwardRef(function Technology(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <PageTracker pageNumber={`03`} pageText={`SPACE LAUNCH 101`} />
-
-      <div className={classes.imgContainer}>
-        <img className={classes.img} src={currentImg} alt="spaceImg" />
-      </div>
-
-      <div className={classes.buttons}>
-        {api.map((data, idx) => (
-          <div key={idx}>
-            <button
-              className={classes.btn}
-              type="button"
-              onClick={() =>
-                setCurrentImg(
-                  data.images.img,
-                  setCurrentTitle(data.title, setCurrentDescription(data.description)),
-                )
-              }
-            >
-              {data.num}
-            </button>
-          </div>
-        ))}
-      </div>
+      <PageTracker pageNum={`03`} pageLabel={`SPACE LAUNCH 101`} />
 
       <div className={classes.container}>
-        <h5 className={classes.subTitle}>The Terminology...</h5>
-        <h4 className={classes.title}>{currentTitle}</h4>
-        <p className={classes.description}>{currentDescription}</p>
+        <div className={classes.imgContainer}>
+          <img className={classes.img} src={currentImg} alt="spaceImg" />
+        </div>
+
+        <div className={classes.buttons}>
+          {api.map((data, idx) => (
+            <div key={idx}>
+              <button
+                className={classes.btn}
+                type="button"
+                onClick={() =>
+                  setCurrentImg(
+                    data.images.img,
+                    setCurrentTitle(data.title, setCurrentDescription(data.description)),
+                  )
+                }
+              >
+                {data.num}
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <div className={classes.textContainer}>
+          <h5 className={classes.subTitle}>The Terminology...</h5>
+          <h3 className={classes.title}>{currentTitle}</h3>
+          <p className={classes.description}>{currentDescription}</p>
+        </div>
       </div>
     </div>
   )

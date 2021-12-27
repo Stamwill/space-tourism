@@ -1,4 +1,11 @@
-.root {
+/* .root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,6 +14,7 @@
 
 .buttons {
   display: flex;
+  justify-content: center;
   border: none;
   transition: all 1s;
 }
@@ -39,7 +47,7 @@
   width: 100%;
 }
 
-.container {
+.textContainer {
   margin: 0 auto;
   text-align: center;
 }
@@ -81,13 +89,36 @@
     margin: 40px 30px;
   }
 
-  .container {
+  .textContainer {
     width: 70%;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .imgContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
     height: 500px;
+    order: 3;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .textContainer {
+    text-align: left;
+    width: 50%;
+    margin-right: 140px;
+  }
+
+  .description {
+    line-height: 35px;
   }
 }
