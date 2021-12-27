@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
         <AppDrawer nav={nav} open={menuIsOpen} toggleMenu={toggleMenu} />
       </AppAppBar>
+
       <Component {...pageProps} />
     </GlobalProvider>
   )
