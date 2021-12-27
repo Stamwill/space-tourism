@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import classes from './PageTracker.module.css'
 
 const PageTracker = React.forwardRef(function PageTracker(props, ref) {
-  const { className, children, pageNumber, pageText, ...other } = props
+  const { className, children, pageNum, pageLabel, ...other } = props
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <span className={classes.num}>{pageNumber}</span>
-      <h5 className={classes.text}>{pageText}</h5>
+      <span className={classes.num}>{pageNum}</span>
+      <h5 className={classes.text}>{pageLabel}</h5>
     </div>
   )
 })
@@ -15,8 +15,8 @@ const PageTracker = React.forwardRef(function PageTracker(props, ref) {
 PageTracker.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  pageNumber: PropTypes.string,
-  pageText: PropTypes.string,
+  pageNum: PropTypes.string,
+  pageLabel: PropTypes.string,
 }
 
 export default PageTracker
