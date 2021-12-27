@@ -9,7 +9,7 @@ const CrewMember = React.forwardRef(function CrewMember(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <PageTracker pageNumber={`02`} pageText={`MEET YOUR CREW`} />
+      <PageTracker pageNum={`02`} pageLabel={`MEET YOUR CREW`} />
       <EmblaCarousel>
         {api.map((data, idx) => (
           <div className={classes.crew} key={idx}>
