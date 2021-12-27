@@ -13,7 +13,7 @@ const Planets = React.forwardRef(function Planets(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <PageTracker pageNumber={`01`} pageText={`PICK YOUR DESTINATION`} />
+      <PageTracker pageNum={`01`} pageLabel={`PICK YOUR DESTINATION`} />
       <img className={classes.img} src={currentImg} alt="test" />
       <div className={classes.container}>
         <div className={classes.buttons}>
