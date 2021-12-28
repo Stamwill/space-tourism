@@ -92,8 +92,16 @@
 @media screen and (min-width: 1200px) {
   .root {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .subContainer {
+    display: flex;
+    flex-direction: column;
   }
 
   .button {
