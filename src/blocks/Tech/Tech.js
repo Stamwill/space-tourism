@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import PageTracker from '../PageTracker/PageTracker'
+import Section from '../../components/Section'
 import classes from './Tech.module.css'
 
 const Technology = React.forwardRef(function Technology(props, ref) {
@@ -11,7 +12,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
   const [currentDescription, setCurrentDescription] = React.useState(api[0].description)
 
   return (
-    <div className={classes.root} ref={ref} {...other}>
+    <Section className={classes.root} ref={ref} {...other}>
       <PageTracker pageNum={`03`} pageLabel={`SPACE LAUNCH 101`} />
 
       <div className={classes.container}>
@@ -19,32 +20,34 @@ const Technology = React.forwardRef(function Technology(props, ref) {
           <img className={classes.img} src={currentImg} alt="spaceImg" />
         </div>
 
-        <div className={classes.buttons}>
-          {api.map((data, idx) => (
-            <div key={idx}>
-              <button
-                className={classes.btn}
-                type="button"
-                onClick={() =>
-                  setCurrentImg(
-                    data.images.img,
-                    setCurrentTitle(data.title, setCurrentDescription(data.description)),
-                  )
-                }
-              >
-                {data.num}
-              </button>
-            </div>
-          ))}
-        </div>
+        <div className={classes.subContainer}>
+          <div className={classes.buttons}>
+            {api.map((data, idx) => (
+              <div key={idx}>
+                <button
+                  className={classes.btn}
+                  type="button"
+                  onClick={() =>
+                    setCurrentImg(
+                      data.images.img,
+                      setCurrentTitle(data.title, setCurrentDescription(data.description)),
+                    )
+                  }
+                >
+                  {data.num}
+                </button>
+              </div>
+            ))}
+          </div>
 
-        <div className={classes.textContainer}>
-          <h5 className={classes.subTitle}>The Terminology...</h5>
-          <h3 className={classes.title}>{currentTitle}</h3>
-          <p className={classes.description}>{currentDescription}</p>
+          <div className={classes.textContainer}>
+            <h5 className={classes.subTitle}>The Terminology...</h5>
+            <h3 className={classes.title}>{currentTitle}</h3>
+            <p className={classes.description}>{currentDescription}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </Section>
   )
 })
 

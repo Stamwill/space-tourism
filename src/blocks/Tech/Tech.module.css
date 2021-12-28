@@ -99,23 +99,35 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .subContainer {
+    display: flex;
+    align-items: center;
+  }
 
   .imgContainer {
     display: flex;
     justify-content: flex-end;
-    width: 500px;
     height: 500px;
     order: 3;
   }
 
   .buttons {
+    margin-top: 0;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn {
+    margin: 30px;
   }
 
   .textContainer {
     text-align: left;
-    width: 50%;
-    margin-right: 140px;
+    margin-left: 10px;
+  }
+
+  .subTitle {
+    margin-top: 0;
   }
 
   .description {
