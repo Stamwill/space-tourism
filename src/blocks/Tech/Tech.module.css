@@ -46,6 +46,7 @@
 }
 
 .subTitle {
+  margin-top: 0;
   color: var(--white-color);
 }
 
