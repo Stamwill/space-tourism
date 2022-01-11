@@ -6,7 +6,7 @@ const ExploreLink = React.forwardRef(function ExploreLink(props, ref) {
   const { className, children, ...other } = props
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <a className={classes.link} href="/">
+      <a className={classes.link} href="/destination">
         Explore
       </a>
     </div>
