@@ -10,9 +10,9 @@ const Navbar = React.forwardRef(function Navbar(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <div className={classes.logo}>
+      <a className={classes.logo} href="/">
         <img src={logo.src} alt="space logo" />
-      </div>
+      </a>
 
       <div className={classes.line} />
 
