@@ -93,6 +93,7 @@
 @media screen and (min-width: 1200px) {
   .root {
     display: flex;
+    align-items: unset;
     justify-content: space-evenly;
   }
 

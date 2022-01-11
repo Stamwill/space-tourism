@@ -12,7 +12,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
   const [currentDescription, setCurrentDescription] = React.useState(api[0].description)
 
   return (
-    <Section className={classes.root} ref={ref} {...other}>
+    <section className={classes.root} ref={ref} {...other}>
       <PageTracker pageNum={`03`} pageLabel={`SPACE LAUNCH 101`} />
 
       <div className={classes.container}>
@@ -47,7 +47,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
           </div>
         </div>
       </div>
-    </Section>
+    </section>
   )
 })
 
