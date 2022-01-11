@@ -15,3 +15,9 @@
     margin-left: 45px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .root {
+    justify-content: flex-start;
+  }
+}
