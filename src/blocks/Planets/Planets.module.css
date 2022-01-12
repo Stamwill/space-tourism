@@ -49,7 +49,6 @@
 }
 
 .description {
-  font-size: 12px;
   padding-bottom: 50px;
   height: 90px;
 }
@@ -62,7 +61,7 @@
   opacity: 0.2;
 }
 
-.test {
+.distanceContainer {
   margin-top: 20px;
 }
 
@@ -82,7 +81,7 @@
   .textContainer {
     width: 50%;
   }
-  .test {
+  .distanceContainer {
     width: 50%;
     margin: 20px auto;
     display: flex;
@@ -104,6 +103,14 @@
   .subContainer {
     display: flex;
     flex-direction: column;
+  }
+
+  .description {
+    height: 100%;
+  }
+
+  .distanceContainer {
+    margin: 0 auto;
   }
 
   .button {

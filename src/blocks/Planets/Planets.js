@@ -51,7 +51,7 @@ const Planets = React.forwardRef(function Planets(props, ref) {
 
           {/* Create block for moon and description? */}
 
-          <div className={classes.test}>
+          <div className={classes.distanceContainer}>
             <div>
               <h5 className={classes.distanceHeader}>AVG. DISTANCE</h5>
               <p className={classes.distance}>{currentDistance}</p>
