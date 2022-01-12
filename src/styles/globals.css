@@ -40,19 +40,19 @@ a {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 35px;
 }
 
 h2 {
-  font-size: 75px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 56px;
+  font-size: 25px;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 h5 {
@@ -61,21 +61,43 @@ h5 {
   font-family: var(--barlow-font);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   h1 {
-    font-size: 150px;
+    font-size: 60px;
   }
 
   h2 {
-    font-size: 100px;
+    font-size: 40px;
   }
 
   h3 {
-    font-size: 56px;
+    font-size: 30px;
   }
 
   h4 {
-    font-size: 32px;
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
+
+  h4 {
+    font-size: 40px;
   }
 
   h5 {
