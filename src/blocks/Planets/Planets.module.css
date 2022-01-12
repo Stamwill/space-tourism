@@ -43,6 +43,8 @@
 }
 
 .textContainer {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   text-align: center;
   margin: 0 auto;
@@ -58,6 +60,7 @@
   position: relative;
   height: 1px;
   background-color: white;
+
   opacity: 0.2;
 }
 
@@ -79,7 +82,7 @@
 
 @media screen and (min-width: 768px) {
   .textContainer {
-    width: 50%;
+    width: 60%;
   }
   .distanceContainer {
     width: 50%;
@@ -100,6 +103,10 @@
     flex-direction: row;
   }
 
+  .textContainer {
+    width: 80%;
+  }
+
   .subContainer {
     display: flex;
     flex-direction: column;
@@ -107,6 +114,11 @@
 
   .description {
     height: 100%;
+    padding-bottom: 25px;
+  }
+
+  .line {
+    margin-bottom: 10px;
   }
 
   .distanceContainer {
