@@ -6,7 +6,7 @@ const PageTracker = React.forwardRef(function PageTracker(props, ref) {
   const { className, children, pageNum, pageLabel, ...other } = props
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <span className={classes.num}>{pageNum}</span>
+      <h5 className={classes.num}>{pageNum}</h5>
       <h5 className={classes.text}>{pageLabel}</h5>
     </div>
   )
