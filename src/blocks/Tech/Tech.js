@@ -42,7 +42,7 @@ const Technology = React.forwardRef(function Technology(props, ref) {
 
           <div className={classes.textContainer}>
             <h5 className={classes.subTitle}>The Terminology...</h5>
-            <h4 className={classes.title}>{currentTitle}</h4>
+            <h1 className={classes.title}>{currentTitle}</h1>
             <p className={classes.description}>{currentDescription}</p>
           </div>
         </div>
