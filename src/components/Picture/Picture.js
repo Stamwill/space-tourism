@@ -7,13 +7,13 @@ const Picture = React.forwardRef(function Picture(props, ref) {
   const { mobile, tablet, desktop } = api[0].background
 
   return (
-    <div className={classes.root} ref={ref} {...other}>
+    <section className={classes.root} ref={ref} {...other}>
       <picture className={classes.imgContainer}>
         <source className={classes.mobile} media="(max-width: 768px)" srcSet={mobile} />
         <source className={classes.tablet} media="(max-width: 1200px)" srcSet={tablet} />
         <img className={classes.desktop} src={desktop} alt="space" />
       </picture>
-    </div>
+    </section>
   )
 })
 
