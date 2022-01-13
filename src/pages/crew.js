@@ -6,11 +6,11 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <Picture api={crewBg} />
-        <CrewMember api={api} />
-      </main>
-    </div>
+    <main className={styles.container}>
+      {/* <main className={styles.main}> */}
+      <Picture api={crewBg} />
+      <CrewMember api={api} />
+      {/* </main> */}
+    </main>
   )
 }
