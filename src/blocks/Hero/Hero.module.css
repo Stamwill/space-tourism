@@ -61,6 +61,7 @@
   .root {
     flex-direction: row;
     align-items: center;
+    min-height: 85vh;
   }
   .text {
     text-align: left;
@@ -68,6 +69,7 @@
     flex-direction: column;
     color: var(--white-color);
     width: 50%;
+    margin-right: 0;
     margin-left: 12%;
   }
 
