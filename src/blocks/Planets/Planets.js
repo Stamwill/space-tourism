@@ -13,8 +13,7 @@ const Planets = React.forwardRef(function Planets(props, ref) {
   const [currentTravel, setCurrentTravel] = React.useState(api[0].travel)
 
   return (
-    <Section className={classes.root} ref={ref} {...other}>
-      <PageTracker pageNum={`01`} pageLabel={`PICK YOUR DESTINATION`} />
+    <section className={classes.root} ref={ref} {...other}>
       <div className={classes.container}>
         <img className={classes.img} src={currentImg} alt="test" />
 
@@ -64,7 +63,7 @@ const Planets = React.forwardRef(function Planets(props, ref) {
           {/* Create block for distance ? */}
         </div>
       </div>
-    </Section>
+    </section>
   )
 })
 

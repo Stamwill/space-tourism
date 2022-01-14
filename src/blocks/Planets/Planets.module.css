@@ -60,7 +60,6 @@
   position: relative;
   height: 1px;
   background-color: white;
-
   opacity: 0.2;
 }
 
@@ -93,14 +92,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .root {
-    display: flex;
-    align-items: unset;
-    justify-content: space-evenly;
-  }
-
   .container {
     flex-direction: row;
+    align-items: center;
+    margin-top: 0;
   }
 
   .textContainer {
@@ -108,21 +103,15 @@
   }
 
   .subContainer {
-    display: flex;
     flex-direction: column;
-  }
-
-  .description {
-    height: 100%;
-    padding-bottom: 25px;
   }
 
   .line {
     margin-bottom: 10px;
   }
 
-  .distanceContainer {
-    margin: 0 auto;
+  .distance {
+    margin-bottom: 0;
   }
 
   .button {
@@ -131,7 +120,7 @@
 
   .img {
     margin-left: 15%;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
   }
 }
