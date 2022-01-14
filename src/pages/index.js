@@ -1,8 +1,9 @@
 import * as React from 'react'
 import Head from 'next/head'
-import { home } from '../api/mock'
+import { home, homeBg } from '../api/mock'
 import Hero from '../blocks/Hero/Hero'
 import styles from '../styles/Home.module.css'
+import Picture from '../components/Picture/Picture'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Hero api={home} />
+        <Picture api={homeBg} />
       </main>
     </div>
   )
