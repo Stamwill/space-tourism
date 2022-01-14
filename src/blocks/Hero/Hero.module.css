@@ -61,7 +61,6 @@
   .root {
     flex-direction: row;
     align-items: center;
-    min-height: 85vh;
   }
   .text {
     text-align: left;

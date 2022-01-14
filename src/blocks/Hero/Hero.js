@@ -1,7 +1,5 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import { homeBg } from '../../api/mock'
-import Picture from '../../components/Picture/Picture'
 import ExploreLink from '../../components/ExploreLink'
 import classes from './Hero.module.css'
 
@@ -10,8 +8,6 @@ const Hero = React.forwardRef(function Hero(props, ref) {
 
   return (
     <div className={classes.root} ref={ref} {...other}>
-      <Picture api={homeBg} />
-
       {api.map((data, idx) => (
         <div className={classes.text} key={idx}>
           <h5 className={classes.subTitle}>{data.subTitle}</h5>
