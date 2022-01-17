@@ -1,7 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import EmblaCarousel from '../../components/EmblaCarousel'
-import PageTracker from '../PageTracker/PageTracker'
 import classes from './CrewMember.module.css'
 
 const CrewMember = React.forwardRef(function CrewMember(props, ref) {
@@ -9,7 +8,6 @@ const CrewMember = React.forwardRef(function CrewMember(props, ref) {
 
   return (
     <section className={classes.root} ref={ref} {...other}>
-      <PageTracker pageNum={`02`} pageLabel={`MEET YOUR CREW`} />
       <EmblaCarousel>
         {api.map((data, idx) => (
           <div className={classes.crew} key={idx}>

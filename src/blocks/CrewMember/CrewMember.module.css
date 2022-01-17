@@ -89,3 +89,9 @@
     left: 60%;
   }
 }
+
+@media screen and (min-width: 1500px) {
+  .root {
+    margin-top: 150px;
+  }
+}
