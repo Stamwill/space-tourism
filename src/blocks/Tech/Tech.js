@@ -1,7 +1,5 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import PageTracker from '../PageTracker/PageTracker'
-import Section from '../../components/Section'
 import classes from './Tech.module.css'
 
 const Technology = React.forwardRef(function Technology(props, ref) {
@@ -13,8 +11,6 @@ const Technology = React.forwardRef(function Technology(props, ref) {
 
   return (
     <section className={classes.root} ref={ref} {...other}>
-      <PageTracker pageNum={`03`} pageLabel={`SPACE LAUNCH 101`} />
-
       <div className={classes.container}>
         <div className={classes.imgContainer}>
           <img className={classes.img} src={currentImg} alt="spaceImg" />

@@ -107,6 +107,7 @@
 
   .buttons {
     margin-top: 0;
+    margin-left: 5%;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -126,5 +127,19 @@
 
   .description {
     line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .root {
+    margin-top: 100px;
+  }
+
+  .imgContainer {
+    height: 400px;
+  }
+
+  .img {
+    width: 800px;
   }
 }
