@@ -23,3 +23,9 @@
     justify-content: flex-start;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .root {
+    margin-left: 5%;
+  }
+}
