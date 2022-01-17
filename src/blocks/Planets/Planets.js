@@ -1,7 +1,5 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import PageTracker from '../PageTracker/PageTracker'
-import Section from '../../components/Section'
 import classes from './Planets.module.css'
 
 const Planets = React.forwardRef(function Planets(props, ref) {

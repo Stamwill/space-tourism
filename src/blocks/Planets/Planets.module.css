@@ -124,3 +124,9 @@
     width: 300px;
   }
 }
+
+@media screen and (min-width: 1500px) {
+  .root {
+    margin-top: 150px;
+  }
+}
